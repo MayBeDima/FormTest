@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Molkov D.</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container flex">
+    <form class="form" id="form">
+      <fieldset class="form__group">
+        <legend class="form__title">
+          Личная информация
+        </legend>
+        <div class="form__input-wrapper">
+          <input type="text" name="name" class="form__input input-name-js" placeholder="Имя" autocomplete="off">
+          <p class="error-text">
+
+          </p>
+        </div>
+        <div class="form__input-wrapper">
+          <input type="text" name="email" class="form__input input-email-js" placeholder="Email" autocomplete="off">
+          <p class="error-text">
+
+          </p>
+        </div>
+        <div class="form__input-wrapper">
+          <input type="tel" name="phone" class="form__input input-phone-js" placeholder="Номер телефона"
+            autocomplete="off">
+          <p class="error-text">
+
+          </p>
+        </div>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend class="form__title">
+          Информация о бизнесе
+        </legend>
+        <div class="form__input-wrapper">
+          <input type="number" name="cash" class="form__input input-cash-js" placeholder="Оборот" autocomplete="off"
+            step="0.01">
+          <p class="error-text">
+
+          </p>
+        </div>
+        <div class="form__input-wrapper">
+          <input type="text" name="industry" class="form__input input-select-js" placeholder="Индустрия"
+            autocomplete="off" readonly>
+          <p class="error-text">
+
+          </p>
+          <div class="select">
+            <p class="select-item">Индустрия 1</p>
+            <p class="select-item">Индустрия 2</p>
+            <p class="select-item">Индустрия 3</p>
+          </div>
+        </div>
+        <div class="form__input-wrapper">
+          <label for="agreement" class="form__label">
+            <input type="checkbox" name="agreement" id="agreement" class="form__checkbox">
+            <span>Я принимаю условия сервиса</span>
+          </label>
+        </div>
+      </fieldset>
+      <div class="form__btn-wrapper">
+        <button class="form__btn" type="submit" disabled>
+          Отправить
+        </button>
+      </div>
+      <div class="success flex">
+        Спасибо! Ваша заявка принята.
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
